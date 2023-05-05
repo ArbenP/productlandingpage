@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+body{
+    background-color: #eee;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header-img{
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+}
+
+#nav-bar{
+    font-weight: 400;
+    width: 40vw;
+    font-size: 20px;
+}
+
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo{
+    width: 65vw;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+#registration, form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#registration input[type="email"]{
+    max-width: 500px;
+    width: 190px;
+    height: 30px;
+    background-color: whitesmoke;
+
+}
+
+#registration input[type="submit"]{
+    margin-top: 10px;
+    background-color: yellow;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+#features{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.icon{
+    color: green;
+    font-size: 40px;
+    padding-left: 10px;
+    padding-right: 70px;
+}
+
+#howitworks{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
