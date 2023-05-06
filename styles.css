@@ -1,40 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
-body{
+
+body {
     background-color: #eee;
     font-family: 'Open Sans', sans-serif;
 }
 
-#header{
+#header {
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: #eee;
+
 }
 
-#header-img{
+#header-img {
     max-width: 300px;
     width: 100%;
     height: 100%;
 }
 
-#nav-bar{
+#nav-bar {
     font-weight: 400;
     width: 40vw;
     font-size: 20px;
 }
 
 
-ul{
+ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.logo{
-    width: 65vw;
+.logo {
+    width: 60vw;
 }
 
-li{
+li {
     list-style: none;
 }
 
@@ -44,14 +48,15 @@ a {
 
 }
 
-#registration, form{
+#registration,
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#registration input[type="email"]{
+#registration input[type="email"] {
     max-width: 500px;
     width: 190px;
     height: 30px;
@@ -59,14 +64,14 @@ a {
 
 }
 
-#registration input[type="submit"]{
+#registration input[type="submit"] {
     margin-top: 10px;
     background-color: yellow;
     font-size: 15px;
     font-weight: 550;
 }
 
-#features{
+#features {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
@@ -74,7 +79,11 @@ a {
     align-items: center;
 }
 
-.grid{
+#registration{
+    padding-top: 100px;
+}
+
+.grid {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -82,21 +91,21 @@ a {
     width: 100%;
 }
 
-.icon{
+.icon {
     color: green;
     font-size: 40px;
     padding-left: 10px;
     padding-right: 70px;
 }
 
-#howitworks{
+#howitworks {
     margin: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#pricing{
+#pricing {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -105,7 +114,7 @@ a {
     margin-bottom: 20px;
 }
 
-.product{
+.product {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -115,16 +124,16 @@ a {
     margin: 10px;
 }
 
-.level{
+.level {
     background-color: #c1bebe;
     width: 100%;
 }
 
-ol > li{
+ol>li {
     margin-right: 40px;
 }
 
-.productbutton{
+.productbutton {
     margin-top: 10px;
     background-color: yellow;
     font-size: 15px;
@@ -132,9 +141,14 @@ ol > li{
     min-width: 100px;
 }
 
-@media (max-width: 500px){
-    #pricing{
+@media (max-width: 500px) {
+    #pricing {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .product{
+        width: 300px;
     }
 
 }
